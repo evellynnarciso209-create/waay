@@ -1,0 +1,2354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>WAAY - Fitness</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     BARRA SUPERIOR
+===================================================== -->
+
+<div class="top-banner">
+
+    <div class="faixa-movimento">
+
+        <div class="faixa-grupo">
+
+            <span>👕 ROUPAS</span>
+            <span>👟 TÊNIS</span>
+            <span>🍫 BARRINHAS</span>
+            <span>💪 CREATINA</span>
+            <span>🥤 WHEY</span>
+
+        </div>
+
+        <div class="faixa-grupo">
+
+            <span>👕 ROUPAS</span>
+            <span>👟 TÊNIS</span>
+            <span>🍫 BARRINHAS</span>
+            <span>💪 CREATINA</span>
+            <span>🥤 WHEY</span>
+
+        </div>
+ <div class="faixa-grupo">
+
+            <span>👕 ROUPAS</span>
+            <span>👟 TÊNIS</span>
+            <span>🍫 BARRINHAS</span>
+            <span>💪 CREATINA</span>
+            <span>🥤 WHEY</span>
+
+        </div>
+ <div class="faixa-grupo">
+
+            <span>👕 ROUPAS</span>
+            <span>👟 TÊNIS</span>
+            <span>🍫 BARRINHAS</span>
+            <span>💪 CREATINA</span>
+            <span>🥤 WHEY</span>
+
+        </div>
+ <div class="faixa-grupo">
+
+            <span>👕 ROUPAS</span>
+            <span>👟 TÊNIS</span>
+            <span>🍫 BARRINHAS</span>
+            <span>💪 CREATINA</span>
+            <span>🥤 WHEY</span>
+
+        </div>
+  <div class="faixa-grupo">
+
+            <span>👕 ROUPAS</span>
+            <span>👟 TÊNIS</span>
+            <span>🍫 BARRINHAS</span>
+            <span>💪 CREATINA</span>
+            <span>🥤 WHEY</span>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     CABEÇALHO
+===================================================== -->
+
+<header>
+
+    <div class="header-content">
+
+
+        <button
+            class="logo-button"
+            onclick="mostrarPagina('inicio')"
+        >
+
+            WAAY
+
+        </button>
+
+
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="campoPesquisa"
+                placeholder="Buscar produtos..."
+                onkeydown="pesquisarEnter(event)"
+            >
+
+            <button
+                onclick="pesquisarProduto()"
+            >
+
+                Pesquisar
+
+            </button>
+
+        </div>
+
+
+
+        <div class="header-buttons">
+
+
+            <button
+                onclick="abrirMinhaConta()"
+                id="botaoConta"
+            >
+
+                👤
+                <span>Minha conta</span>
+
+            </button>
+
+
+
+            <button
+                onclick="mostrarPagina('favoritos')"
+            >
+
+                ❤️
+                <span>Favoritos</span>
+
+            </button>
+
+
+
+            <button
+                onclick="mostrarPagina('carrinho')"
+            >
+
+                🛒
+                <span>Carrinho</span>
+
+                <span
+                    id="contadorCarrinho"
+                    class="contador-carrinho"
+                >
+                    0
+                </span>
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     MENU
+===================================================== -->
+
+<nav class="menu">
+
+
+    <button
+        onclick="mostrarPagina('inicio')"
+    >
+        INÍCIO
+    </button>
+
+
+    <button
+        onclick="mostrarPagina('produtos')"
+    >
+        PRODUTOS
+    </button>
+
+
+    <button
+        onclick="mostrarPagina('creatinas')"
+    >
+        CREATINAS
+    </button>
+
+
+    <button
+        onclick="mostrarPagina('wheys')"
+    >
+        WHEYS
+    </button>
+
+
+    <button
+        onclick="mostrarPagina('roupas')"
+    >
+        ROUPAS
+    </button>
+
+
+    <button
+        onclick="mostrarPagina('tenis')"
+    >
+        TÊNIS
+    </button>
+
+
+    <button
+        onclick="mostrarPagina('barrinhas')"
+    >
+        BARRINHAS
+    </button>
+
+
+    <button
+        onclick="mostrarPagina('waayclub')"
+    >
+        WAAY CLUB
+    </button>
+
+
+</nav>
+
+
+
+<!-- =====================================================
+     PÁGINA INICIAL
+===================================================== -->
+
+<main
+    id="inicio"
+    class="pagina"
+>
+
+
+    <!-- BANNER -->
+
+    <section class="banner">
+
+
+        <div class="banner-text">
+
+            <span class="banner-tag">
+                OFERTAS EXCLUSIVAS
+            </span>
+
+            <h1>
+                OFERTAS
+                <br>
+                WAAY
+            </h1>
+
+            <h2>
+
+                ATÉ
+                <strong>35%</strong>
+                OFF
+
+            </h2>
+
+            <p>
+                Produtos selecionados para
+                acompanhar seus treinos.
+            </p>
+
+            <button
+                onclick="mostrarPagina('produtos')"
+                class="banner-button"
+            >
+
+                COMPRAR AGORA
+
+            </button>
+
+        </div>
+
+
+
+        <div class="banner-image">
+
+            <!--
+                VOCÊ PODE TROCAR ESTA IMAGEM.
+
+                Exemplo:
+                imagens/banner.png
+            -->
+
+            <img
+                src="./imagens/banner.png"
+                alt="Produtos WAAY"
+                onerror="this.style.display='none'"
+            >
+
+           
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- MAIS VENDIDOS -->
+
+    <section class="mais-vendidos">
+
+
+        <div class="titulo-secao">
+
+            <span>
+                WAAY FITNESS
+            </span>
+
+            <h2>
+                PRODUTOS MAIS VENDIDOS
+            </h2>
+
+            <p>
+                Os favoritos dos clientes WAAY
+            </p>
+
+        </div>
+
+
+
+        <div
+            id="listaMaisVendidos"
+            class="mais-vendidos-grid"
+        ></div>
+
+
+
+        <button
+            class="botao-ver-produtos"
+            onclick="mostrarPagina('produtos')"
+        >
+
+            VER TODOS OS PRODUTOS →
+
+        </button>
+
+
+    </section>
+
+
+
+    <!-- WAAY CLUB -->
+
+    <section class="waayclub-destaque">
+
+
+        <div>
+
+            <span class="club-tag">
+                BENEFÍCIOS WAAY
+            </span>
+
+            <h2>
+                WAAY CLUB
+            </h2>
+
+            <p>
+                Faça parte do clube WAAY e
+                aproveite benefícios exclusivos.
+            </p>
+
+            <button
+                onclick="abrirWaayClub()"
+            >
+
+                CONHECER WAAY CLUB
+
+            </button>
+
+        </div>
+
+
+
+        <div class="club-pontos">
+
+            <strong>
+                500
+            </strong>
+
+            <span>
+                PONTOS
+            </span>
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     TODOS OS PRODUTOS
+===================================================== -->
+
+<main
+    id="produtos"
+    class="pagina escondida"
+>
+
+
+    <div class="pagina-topo">
+
+        <button
+            onclick="mostrarPagina('inicio')"
+            class="voltar"
+        >
+            ←
+        </button>
+
+        <div>
+
+            <span class="pagina-tag">
+                LOJA WAAY
+            </span>
+
+            <h1>
+                Todos os produtos
+            </h1>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="filtros">
+
+
+        <input
+            type="number"
+            id="precoMin"
+            placeholder="Preço mínimo"
+            oninput="aplicarFiltros()"
+        >
+
+
+        <input
+            type="number"
+            id="precoMax"
+            placeholder="Preço máximo"
+            oninput="aplicarFiltros()"
+        >
+
+
+        <select
+            id="ordenacao"
+            onchange="aplicarFiltros()"
+        >
+
+            <option value="normal">
+                Ordenar
+            </option>
+
+            <option value="menor">
+                Menor preço
+            </option>
+
+            <option value="maior">
+                Maior preço
+            </option>
+
+            <option value="nome">
+                Nome A-Z
+            </option>
+
+        </select>
+
+
+    </div>
+
+
+
+    <div
+        id="listaProdutos"
+        class="produtos-grid"
+    ></div>
+
+
+</main>
+
+
+
+<!-- =====================================================
+     CREATINAS
+===================================================== -->
+
+<main
+    id="creatinas"
+    class="pagina escondida"
+>
+
+    <div class="pagina-topo">
+
+        <button
+            onclick="mostrarPagina('inicio')"
+            class="voltar"
+        >
+            ←
+        </button>
+
+        <div>
+
+            <span class="pagina-tag">
+                SUPLEMENTAÇÃO
+            </span>
+
+            <h1>
+                Creatinas
+            </h1>
+
+        </div>
+
+    </div>
+
+
+    <div class="filtros-categoria">
+
+        <input
+            type="number"
+            id="minCreatinas"
+            placeholder="Preço mínimo"
+        >
+
+        <input
+            type="number"
+            id="maxCreatinas"
+            placeholder="Preço máximo"
+        >
+
+        <select id="ordemCreatinas">
+
+            <option value="">
+                Ordenar
+            </option>
+
+            <option value="menor">
+                Menor preço
+            </option>
+
+            <option value="maior">
+                Maior preço
+            </option>
+
+            <option value="az">
+                Nome A-Z
+            </option>
+
+            <option value="za">
+                Nome Z-A
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div
+        id="listaCreatinas"
+        class="produtos-grid"
+    ></div>
+
+</main>
+
+
+
+<!-- =====================================================
+     WHEYS
+===================================================== -->
+
+<main
+    id="wheys"
+    class="pagina escondida"
+>
+
+    <div class="pagina-topo">
+
+        <button
+            onclick="mostrarPagina('inicio')"
+            class="voltar"
+        >
+            ←
+        </button>
+
+        <div>
+
+            <span class="pagina-tag">
+                PROTEÍNA
+            </span>
+
+            <h1>
+                Wheys
+            </h1>
+
+        </div>
+
+    </div>
+
+
+    <div class="filtros-categoria">
+
+        <input
+            type="number"
+            id="minWheys"
+            placeholder="Preço mínimo"
+        >
+
+        <input
+            type="number"
+            id="maxWheys"
+            placeholder="Preço máximo"
+        >
+
+        <select id="ordemWheys">
+
+            <option value="">
+                Ordenar
+            </option>
+
+            <option value="menor">
+                Menor preço
+            </option>
+
+            <option value="maior">
+                Maior preço
+            </option>
+
+            <option value="az">
+                Nome A-Z
+            </option>
+
+            <option value="za">
+                Nome Z-A
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div
+        id="listaWheys"
+        class="produtos-grid"
+    ></div>
+
+</main>
+
+
+
+<!-- =====================================================
+     ROUPAS
+===================================================== -->
+
+<main
+    id="roupas"
+    class="pagina escondida"
+>
+
+    <div class="pagina-topo">
+
+        <button
+            onclick="mostrarPagina('inicio')"
+            class="voltar"
+        >
+            ←
+        </button>
+
+        <div>
+
+            <span class="pagina-tag">
+                ESTILO FITNESS
+            </span>
+
+            <h1>
+                Roupas
+            </h1>
+
+        </div>
+
+    </div>
+
+
+    <div class="filtros-categoria">
+
+        <input
+            type="number"
+            id="minRoupas"
+            placeholder="Preço mínimo"
+        >
+
+        <input
+            type="number"
+            id="maxRoupas"
+            placeholder="Preço máximo"
+        >
+
+        <select id="ordemRoupas">
+
+            <option value="">
+                Ordenar
+            </option>
+
+            <option value="menor">
+                Menor preço
+            </option>
+
+            <option value="maior">
+                Maior preço
+            </option>
+
+            <option value="az">
+                Nome A-Z
+            </option>
+
+            <option value="za">
+                Nome Z-A
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div
+        id="listaRoupas"
+        class="produtos-grid"
+    ></div>
+
+</main>
+
+
+
+<!-- =====================================================
+     TÊNIS
+===================================================== -->
+
+<main
+    id="tenis"
+    class="pagina escondida"
+>
+
+    <div class="pagina-topo">
+
+        <button
+            onclick="mostrarPagina('inicio')"
+            class="voltar"
+        >
+            ←
+        </button>
+
+        <div>
+
+            <span class="pagina-tag">
+                PERFORMANCE
+            </span>
+
+            <h1>
+                Tênis
+            </h1>
+
+        </div>
+
+    </div>
+
+
+    <div class="filtros-categoria">
+
+        <input
+            type="number"
+            id="minTenis"
+            placeholder="Preço mínimo"
+        >
+
+        <input
+            type="number"
+            id="maxTenis"
+            placeholder="Preço máximo"
+        >
+
+        <select id="ordemTenis">
+
+            <option value="">
+                Ordenar
+            </option>
+
+            <option value="menor">
+                Menor preço
+            </option>
+
+            <option value="maior">
+                Maior preço
+            </option>
+
+            <option value="az">
+                Nome A-Z
+            </option>
+
+            <option value="za">
+                Nome Z-A
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div
+        id="listaTenis"
+        class="produtos-grid"
+    ></div>
+
+</main>
+
+
+
+<!-- =====================================================
+     BARRINHAS
+===================================================== -->
+
+<main
+    id="barrinhas"
+    class="pagina escondida"
+>
+
+    <div class="pagina-topo">
+
+        <button
+            onclick="mostrarPagina('inicio')"
+            class="voltar"
+        >
+            ←
+        </button>
+
+        <div>
+
+            <span class="pagina-tag">
+                SNACK FITNESS
+            </span>
+
+            <h1>
+                Barrinhas
+            </h1>
+
+        </div>
+
+    </div>
+
+
+    <div class="filtros-categoria">
+
+        <input
+            type="number"
+            id="minBarrinhas"
+            placeholder="Preço mínimo"
+        >
+
+        <input
+            type="number"
+            id="maxBarrinhas"
+            placeholder="Preço máximo"
+        >
+
+        <select id="ordemBarrinhas">
+
+            <option value="">
+                Ordenar
+            </option>
+
+            <option value="menor">
+                Menor preço
+            </option>
+
+            <option value="maior">
+                Maior preço
+            </option>
+
+            <option value="az">
+                Nome A-Z
+            </option>
+
+            <option value="za">
+                Nome Z-A
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <div
+        id="listaBarrinhas"
+        class="produtos-grid"
+    ></div>
+
+</main>
+
+
+
+<!-- =====================================================
+     PESQUISA
+===================================================== -->
+
+<main
+    id="pesquisa"
+    class="pagina escondida"
+>
+
+    <div class="pagina-topo">
+
+        <button
+            onclick="mostrarPagina('inicio')"
+            class="voltar"
+        >
+            ←
+        </button>
+
+        <div>
+
+            <span class="pagina-tag">
+                BUSCA
+            </span>
+
+            <h1>
+                Resultados da pesquisa
+            </h1>
+
+        </div>
+
+    </div>
+
+
+    <p
+        id="textoPesquisa"
+        class="texto-pesquisa"
+    ></p>
+
+
+    <div
+        id="resultadosPesquisa"
+        class="produtos-grid"
+    ></div>
+
+</main>
+
+
+
+<!-- =====================================================
+     DETALHES DO PRODUTO
+===================================================== -->
+
+<main
+    id="produtoDetalhes"
+    class="pagina escondida"
+>
+
+    <div class="pagina-topo">
+
+        <button
+            onclick="voltarDaPaginaProduto()"
+            class="voltar"
+        >
+            ← Voltar
+        </button>
+
+        <div>
+
+            <span class="pagina-tag">
+                PRODUTO WAAY
+            </span>
+
+            <h1>
+                Detalhes
+            </h1>
+
+        </div>
+
+    </div>
+
+
+    <div
+        id="produtoDetalhesConteudo"
+        class="produto-detalhe-area"
+    ></div>
+
+</main>
+
+
+
+<!-- =====================================================
+     CARRINHO
+===================================================== -->
+
+<main
+    id="carrinho"
+    class="pagina escondida"
+>
+
+    <div class="pagina-topo">
+
+        <button
+            onclick="mostrarPagina('inicio')"
+            class="voltar"
+        >
+            ←
+        </button>
+
+        <div>
+
+            <span class="pagina-tag">
+                SEU PEDIDO
+            </span>
+
+            <h1>
+                Meu carrinho
+            </h1>
+
+        </div>
+
+    </div>
+
+
+    <div
+        id="itensCarrinho"
+        class="itens-carrinho"
+    ></div>
+
+
+
+    <div
+        id="resumoCarrinho"
+        class="resumo-carrinho"
+    >
+
+        <div class="cupom-waay">
+
+            <div class="cupom-titulo">
+
+                🎁
+
+                <strong>
+                    CUPOM DE DESCONTO
+                </strong>
+
+            </div>
+
+
+            <p>
+
+                Use o código
+
+                <strong>
+                    FITNESS
+                </strong>
+
+                e ganhe
+
+                <strong>
+                    R$ 15,00
+                </strong>
+
+                de desconto.
+
+            </p>
+
+
+            <div class="cupom-form">
+
+                <input
+                    type="text"
+                    id="codigoCupom"
+                    placeholder="Digite FITNESS"
+                    maxlength="20"
+                    onkeydown="verificarEnterCupom(event)"
+                >
+
+
+                <button
+                    onclick="aplicarCupom()"
+                >
+
+                    APLICAR
+
+                </button>
+
+            </div>
+
+
+            <p
+                id="mensagemCupom"
+                class="mensagem-cupom"
+            ></p>
+
+        </div>
+
+
+
+        <div class="valores-carrinho">
+
+
+            <div class="linha-valor">
+
+                <span>
+                    Subtotal
+                </span>
+
+                <strong>
+
+                    R$
+
+                    <span id="subtotalCarrinho">
+                        0,00
+                    </span>
+
+                </strong>
+
+            </div>
+
+
+
+            <div
+                class="linha-valor desconto-carrinho"
+                id="linhaDesconto"
+            >
+
+                <span>
+                    Desconto FITNESS
+                </span>
+
+                <strong>
+
+                    - R$
+
+                    <span id="valorDesconto">
+                        0,00
+                    </span>
+
+                </strong>
+
+            </div>
+
+
+
+            <div class="linha-total">
+
+                <span>
+                    Total
+                </span>
+
+                <strong>
+
+                    R$
+
+                    <span id="totalCarrinho">
+                        0,00
+                    </span>
+
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+
+        <button
+            class="botao-finalizar"
+            onclick="finalizarCompra()"
+        >
+
+            FINALIZAR COMPRA
+
+        </button>
+
+
+    </div>
+
+</main>
+
+
+
+<!-- =====================================================
+     MINHA CONTA
+===================================================== -->
+
+<main
+    id="login"
+    class="pagina escondida"
+>
+
+    <div class="pagina-topo">
+
+        <button
+            onclick="mostrarPagina('inicio')"
+            class="voltar"
+        >
+            ←
+        </button>
+
+        <div>
+
+            <span class="pagina-tag">
+                ÁREA DO CLIENTE
+            </span>
+
+            <h1>
+                Minha conta
+            </h1>
+
+        </div>
+
+    </div>
+
+
+    <div class="conta-container">
+
+        <!-- LOGIN -->
+
+        <section
+            id="loginBox"
+            class="conta-card"
+        >
+
+            <div class="conta-logo">
+                WAAY
+            </div>
+
+            <h2>
+                Entrar na sua conta
+            </h2>
+
+            <p class="conta-subtitulo">
+
+                Acesse sua conta para
+                acompanhar suas compras.
+
+            </p>
+
+
+            <div class="campo-conta">
+
+                <label for="emailLogin">
+                    E-mail
+                </label>
+
+                <input
+                    type="email"
+                    id="emailLogin"
+                    placeholder="Digite seu e-mail"
+                    autocomplete="email"
+                >
+
+            </div>
+
+
+            <div class="campo-conta">
+
+                <label for="senhaLogin">
+                    Senha
+                </label>
+
+                <input
+                    type="password"
+                    id="senhaLogin"
+                    placeholder="Digite sua senha"
+                    autocomplete="current-password"
+                    onkeydown="loginEnter(event)"
+                >
+
+            </div>
+
+
+            <button
+                class="botao-conta"
+                onclick="login()"
+            >
+
+                ENTRAR
+
+            </button>
+
+
+            <div
+                id="mensagemLogin"
+                class="mensagem-conta"
+            ></div>
+
+
+            <div class="divisor-conta">
+
+                <span>
+                    OU
+                </span>
+
+            </div>
+
+
+            <p>
+                Ainda não tem uma conta?
+            </p>
+
+
+            <button
+                class="botao-conta secundario"
+                onclick="mostrarCadastro()"
+            >
+
+                CRIAR CONTA
+
+            </button>
+
+        </section>
+
+
+
+        <!-- CADASTRO -->
+
+        <section
+            id="cadastroBox"
+            class="conta-card escondido"
+        >
+
+            <div class="conta-logo">
+                WAAY
+            </div>
+
+            <h2>
+                Criar minha conta
+            </h2>
+
+            <p class="conta-subtitulo">
+
+                Cadastre-se gratuitamente.
+
+            </p>
+
+
+            <div class="campo-conta">
+
+                <label for="nomeCadastro">
+                    Nome completo
+                </label>
+
+                <input
+                    type="text"
+                    id="nomeCadastro"
+                    placeholder="Seu nome completo"
+                    autocomplete="name"
+                >
+
+            </div>
+
+
+            <div class="campo-conta">
+
+                <label for="emailCadastro">
+                    E-mail
+                </label>
+
+                <input
+                    type="email"
+                    id="emailCadastro"
+                    placeholder="seuemail@email.com"
+                    autocomplete="email"
+                >
+
+            </div>
+
+
+            <div class="campo-conta">
+
+                <label for="senhaCadastro">
+                    Senha
+                </label>
+
+                <input
+                    type="password"
+                    id="senhaCadastro"
+                    placeholder="Mínimo de 6 caracteres"
+                    autocomplete="new-password"
+                >
+
+            </div>
+
+
+            <div class="campo-conta">
+
+                <label for="senhaCadastroConfirmacao">
+                    Confirmar senha
+                </label>
+
+                <input
+                    type="password"
+                    id="senhaCadastroConfirmacao"
+                    placeholder="Digite novamente"
+                    autocomplete="new-password"
+                    onkeydown="cadastroEnter(event)"
+                >
+
+            </div>
+
+
+            <button
+                class="botao-conta"
+                onclick="cadastrar()"
+            >
+
+                CRIAR MINHA CONTA
+
+            </button>
+
+
+            <div
+                id="mensagemCadastro"
+                class="mensagem-conta"
+            ></div>
+
+
+            <button
+                class="botao-link-conta"
+                onclick="mostrarLogin()"
+            >
+
+                ← Já tenho uma conta
+
+            </button>
+
+        </section>
+
+
+
+        <!-- CONTA LOGADA -->
+
+        <section
+            id="areaConta"
+            class="conta-card escondido"
+        >
+
+            <div class="conta-logo">
+                WAAY
+            </div>
+
+
+            <div
+                id="avatarUsuario"
+                class="avatar-usuario"
+            >
+                U
+            </div>
+
+
+            <h2 id="nomeUsuarioConta">
+                Olá!
+            </h2>
+
+
+            <p class="conta-subtitulo">
+
+                Sua conta está conectada.
+
+            </p>
+
+
+            <div class="dados-conta">
+
+
+                <div class="dado-conta">
+
+                    <span>
+                        Nome
+                    </span>
+
+                    <strong id="dadosNome">
+                        -
+                    </strong>
+
+                </div>
+
+
+
+                <div class="dado-conta">
+
+                    <span>
+                        E-mail
+                    </span>
+
+                    <strong id="dadosEmail">
+                        -
+                    </strong>
+
+                </div>
+
+
+
+                <div class="dado-conta">
+
+                    <span>
+                        Cliente desde
+                    </span>
+
+                    <strong id="dadosData">
+                        -
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+            <button
+                class="botao-conta"
+                onclick="mostrarPagina('produtos')"
+            >
+
+                CONTINUAR COMPRANDO
+
+            </button>
+
+
+            <button
+                class="botao-conta secundario"
+                onclick="mostrarPagina('carrinho')"
+            >
+
+                MEU CARRINHO
+
+            </button>
+
+
+            <button
+                class="botao-sair"
+                onclick="logout()"
+            >
+
+                SAIR DA CONTA
+
+            </button>
+
+        </section>
+
+
+    </div>
+
+</main>
+
+
+
+<!-- =====================================================
+     FAVORITOS
+===================================================== -->
+
+<main
+    id="favoritos"
+    class="pagina escondida"
+>
+
+    <div class="pagina-topo">
+
+        <button
+            onclick="mostrarPagina('inicio')"
+            class="voltar"
+        >
+            ←
+        </button>
+
+        <div>
+
+            <span class="pagina-tag">
+                SEUS FAVORITOS
+            </span>
+
+            <h1>
+                Meus favoritos
+            </h1>
+
+        </div>
+
+    </div>
+
+
+    <div
+        id="listaFavoritos"
+        class="produtos-grid"
+    ></div>
+
+</main>
+
+
+
+<!-- =====================================================
+     WAAY CLUB
+===================================================== -->
+
+<main
+    id="waayclub"
+    class="pagina escondida"
+>
+
+    <div class="pagina-topo">
+
+        <button
+            onclick="mostrarPagina('inicio')"
+            class="voltar"
+        >
+            ←
+        </button>
+
+        <div>
+
+            <span class="pagina-tag">
+                BENEFÍCIOS
+            </span>
+
+            <h1>
+                WAAY CLUB
+            </h1>
+
+        </div>
+
+    </div>
+
+
+    <div class="club-page">
+
+
+        <div class="club-hero">
+
+            <span>
+                PROGRAMA DE BENEFÍCIOS
+            </span>
+
+            <h2>
+                Faça parte do WAAY CLUB
+            </h2>
+
+            <p>
+
+                Acumule pontos, acompanhe seus
+                pedidos e aproveite benefícios
+                exclusivos.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="club-codigo">
+
+            <span>
+                SEU CUPOM
+            </span>
+
+            <strong>
+                FITNESS
+            </strong>
+
+            <p>
+                R$ 15,00 de desconto
+            </p>
+
+            <button
+                onclick="usarCupomFitness()"
+            >
+
+                USAR CUPOM FITNESS
+
+            </button>
+
+        </div>
+
+
+    </div>
+
+</main>
+
+
+
+<!-- =====================================================
+     CHECKOUT
+===================================================== -->
+
+<main
+    id="checkout"
+    class="pagina escondida"
+>
+
+
+    <div class="pagina-topo">
+
+        <button
+            onclick="mostrarPagina('carrinho')"
+            class="voltar"
+        >
+            ←
+        </button>
+
+        <div>
+
+            <span class="pagina-tag">
+                COMPRA SEGURA
+            </span>
+
+            <h1>
+                Finalizar compra
+            </h1>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="checkout-container">
+
+
+        <!-- ENTREGA -->
+
+        <section class="checkout-card">
+
+
+            <div class="checkout-titulo">
+
+                <span class="checkout-numero">
+                    1
+                </span>
+
+                <div>
+
+                    <h2>
+                        Dados de entrega
+                    </h2>
+
+                    <p>
+                        Informe onde deseja receber seu pedido.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="checkout-grid">
+
+
+                <div class="campo-checkout campo-largo">
+
+                    <label for="nomeEntrega">
+                        Nome completo
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nomeEntrega"
+                        placeholder="Nome completo"
+                        autocomplete="name"
+                    >
+
+                </div>
+
+
+
+                <div class="campo-checkout">
+
+                    <label for="cpfEntrega">
+                        CPF
+                    </label>
+
+                    <input
+                        type="text"
+                        id="cpfEntrega"
+                        placeholder="000.000.000-00"
+                        maxlength="14"
+                        oninput="formatarCPF(this)"
+                    >
+
+                </div>
+
+
+
+                <div class="campo-checkout">
+
+                    <label for="telefoneEntrega">
+                        Telefone
+                    </label>
+
+                    <input
+                        type="text"
+                        id="telefoneEntrega"
+                        placeholder="(00) 00000-0000"
+                        maxlength="15"
+                        oninput="formatarTelefone(this)"
+                    >
+
+                </div>
+
+
+
+                <div class="campo-checkout">
+
+                    <label for="cepEntrega">
+                        CEP
+                    </label>
+
+                    <input
+                        type="text"
+                        id="cepEntrega"
+                        placeholder="00000-000"
+                        maxlength="9"
+                        oninput="formatarCEP(this)"
+                    >
+
+                </div>
+
+
+
+                <div class="campo-checkout campo-largo">
+
+                    <label for="enderecoEntrega">
+                        Endereço
+                    </label>
+
+                    <input
+                        type="text"
+                        id="enderecoEntrega"
+                        placeholder="Rua, avenida..."
+                    >
+
+                </div>
+
+
+
+                <div class="campo-checkout">
+
+                    <label for="numeroEntrega">
+                        Número
+                    </label>
+
+                    <input
+                        type="text"
+                        id="numeroEntrega"
+                        placeholder="Número"
+                    >
+
+                </div>
+
+
+
+                <div class="campo-checkout">
+
+                    <label for="cidadeEntrega">
+                        Cidade
+                    </label>
+
+                    <input
+                        type="text"
+                        id="cidadeEntrega"
+                        placeholder="Cidade"
+                    >
+
+                </div>
+
+
+
+                <div class="campo-checkout">
+
+                    <label for="estadoEntrega">
+                        Estado
+                    </label>
+
+                    <input
+                        type="text"
+                        id="estadoEntrega"
+                        placeholder="SP"
+                        maxlength="2"
+                    >
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- PAGAMENTO -->
+
+        <section class="checkout-card">
+
+
+            <div class="checkout-titulo">
+
+                <span class="checkout-numero">
+                    2
+                </span>
+
+                <div>
+
+                    <h2>
+                        Forma de pagamento
+                    </h2>
+
+                    <p>
+                        Escolha como deseja pagar.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="pagamentos">
+
+
+                <label class="pagamento-opcao">
+
+                    <input
+                        type="radio"
+                        name="pagamento"
+                        value="pix"
+                        onchange="mostrarDadosPagamento()"
+                    >
+
+                    <div class="pagamento-conteudo">
+
+                        <div class="pagamento-topo">
+
+                            <strong>
+                                PIX
+                            </strong>
+
+                            <span>
+                                PIX
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Pagamento instantâneo.
+                        </p>
+
+                    </div>
+
+                </label>
+
+
+
+                <label class="pagamento-opcao">
+
+                    <input
+                        type="radio"
+                        name="pagamento"
+                        value="cartao"
+                        onchange="mostrarDadosPagamento()"
+                    >
+
+                    <div class="pagamento-conteudo">
+
+                        <div class="pagamento-topo">
+
+                            <strong>
+                                Cartão de crédito
+                            </strong>
+
+                            <span>
+                                💳
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Pague com seu cartão.
+                        </p>
+
+                    </div>
+
+                </label>
+
+
+
+                <label class="pagamento-opcao">
+
+                    <input
+                        type="radio"
+                        name="pagamento"
+                        value="boleto"
+                        onchange="mostrarDadosPagamento()"
+                    >
+
+                    <div class="pagamento-conteudo">
+
+                        <div class="pagamento-topo">
+
+                            <strong>
+                                Boleto
+                            </strong>
+
+                            <span>
+                                🧾
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Gere um boleto para pagamento.
+                        </p>
+
+                    </div>
+
+                </label>
+
+
+            </div>
+
+
+
+            <div
+                id="dadosPagamento"
+                class="dados-pagamento"
+            >
+
+                <p>
+                    Escolha uma forma de pagamento.
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- RESUMO -->
+
+        <section class="checkout-card">
+
+
+            <div class="checkout-titulo">
+
+                <span class="checkout-numero">
+                    3
+                </span>
+
+                <div>
+
+                    <h2>
+                        Resumo da compra
+                    </h2>
+
+                    <p>
+                        Confira tudo antes de finalizar.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div
+                id="resumoCheckoutProdutos"
+                class="resumo-checkout-produtos"
+            ></div>
+
+
+
+            <div class="checkout-valores">
+
+
+                <div>
+
+                    <span>
+                        Subtotal
+                    </span>
+
+                    <strong>
+                        R$
+                        <span id="checkoutSubtotal">
+                            0,00
+                        </span>
+                    </strong>
+
+                </div>
+
+
+
+                <div
+                    id="checkoutDescontoLinha"
+                    class="checkout-desconto"
+                >
+
+                    <span>
+                        Cupom FITNESS
+                    </span>
+
+                    <strong>
+                        - R$
+                        <span id="checkoutDesconto">
+                            0,00
+                        </span>
+                    </strong>
+
+                </div>
+
+
+
+                <div class="checkout-total-final">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <strong>
+                        R$
+                        <span id="checkoutTotal">
+                            0,00
+                        </span>
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+
+            <div class="seguranca-compra">
+
+                🔒
+                Compra segura.
+                Seus dados de cartão não são salvos.
+
+            </div>
+
+
+
+            <button
+                class="botao-confirmar-compra"
+                onclick="confirmarPedido()"
+            >
+
+                FINALIZAR PEDIDO
+
+            </button>
+
+
+        </section>
+
+
+    </div>
+
+</main>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="rodape-site">
+
+
+    <div class="rodape-conteudo">
+
+
+        <div class="rodape-coluna rodape-marca">
+
+            <h2>
+                WAAY
+            </h2>
+
+            <p>
+                Sua loja fitness para treinos,
+                performance e estilo.
+            </p>
+
+        </div>
+
+
+
+        <div class="rodape-coluna">
+
+            <h3>
+                Comprar
+            </h3>
+
+            <button
+                onclick="mostrarPagina('produtos')"
+            >
+                Todos os produtos
+            </button>
+
+            <button
+                onclick="mostrarPagina('creatinas')"
+            >
+                Creatinas
+            </button>
+
+            <button
+                onclick="mostrarPagina('wheys')"
+            >
+                Wheys
+            </button>
+
+            <button
+                onclick="mostrarPagina('roupas')"
+            >
+                Roupas
+            </button>
+
+            <button
+                onclick="mostrarPagina('tenis')"
+            >
+                Tênis
+            </button>
+
+            <button
+                onclick="mostrarPagina('barrinhas')"
+            >
+                Barrinhas
+            </button>
+
+        </div>
+
+
+
+        <div class="rodape-coluna">
+
+            <h3>
+                Minha WAAY
+            </h3>
+
+            <button
+                onclick="abrirMinhaConta()"
+            >
+                Minha conta
+            </button>
+
+            <button
+                onclick="mostrarPagina('favoritos')"
+            >
+                Favoritos
+            </button>
+
+            <button
+                onclick="mostrarPagina('carrinho')"
+            >
+                Meu carrinho
+            </button>
+
+            <button
+                onclick="abrirWaayClub()"
+            >
+                WAAY Club
+            </button>
+
+        </div>
+
+
+
+        <div class="rodape-coluna">
+
+            <h3>
+                Atendimento
+            </h3>
+
+            <p>
+                📞 (10) 99584-1022
+            </p>
+
+            <p>
+                ✉️ contato@waay.com.br
+            </p>
+
+            <p>
+                Instagram:
+                @fit.waay_web
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="rodape-final">
+
+        <span>
+            © 2026 WAAY Fitness
+        </span>
+
+        <span>
+            Desenvolvido para sua rotina fitness.
+        </span>
+
+    </div>
+
+
+</footer>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
